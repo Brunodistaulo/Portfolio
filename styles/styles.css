@@ -1,135 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body, html{
- font-family: 'Poppins', sans-serif;
- background: rgb(26, 26, 26);
- color: white;
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background: rgb(26, 26, 26);
+  color: white;
 }
-.name{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 20px;
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
 }
-.subtitulo{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 500;
+.subtitulo {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
 }
-.about h2{
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
+.about h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
 }
-.about p{
-    line-height: normal;
-    width: 1100px;
-    text-align: center;
-    margin: auto;
+.about p {
+  line-height: normal;
+  width: 1100px;
+  text-align: center;
+  margin: auto;
 }
-.about{
-    text-align: center;
-    margin: auto;
-    width: 1200px;
-    height: 200px;
-    background: rgb(121, 120, 120);
-    border-radius: 10px;
+.about {
+  text-align: center;
+  margin: auto;
+  width: 1200px;
+  height: 200px;
+  background: rgb(121, 120, 120);
+  border-radius: 10px;
 }
-.technologies{
-    height: 400px;
-    width: 1200px;
-    margin: 20px auto;
-    border-radius: 10px;
-    background: rgb(121, 120, 120);
-    text-align: center;
+.technologies {
+  height: 400px;
+  width: 1200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: rgb(121, 120, 120);
+  text-align: center;
 }
-.technologies h2{
-    padding: 10px;
-    font-size: 25px;
-    text-align: center;
+.technologies h2 {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
 }
-.technologies div{
-    cursor: default;
-    display: inline-block;
-    margin: 20px 60px;
-    padding: 20px;
-    border-radius: 5%;
-    background: #3d3b3b;
-    filter: grayscale(100%);
-    transition: all .5s;
+.technologies div {
+  cursor: default;
+  display: inline-block;
+  margin: 20px 60px;
+  padding: 20px;
+  border-radius: 5%;
+  background: #3d3b3b;
+  filter: grayscale(100%);
+  transition: all 0.5s;
 }
-.technologies img{
-    width: 200px;
-    height: 200px;
-    border-radius: 10%;
+.technologies img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
 }
 .technologies div:hover {
-    transform: scale(1.2);
-
-    box-shadow: 1px 0px 5px #fff;
-    filter: grayscale(0%);
-    
+  transform: scale(1.2);
+  box-shadow: 1px 0px 10px #fff;
+  filter: grayscale(0%);
 }
-.technologies div p{
-    margin-bottom:10px;
-    font-size: 30px;
-    font-weight: 500;
+.technologies div p {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
 }
-.actividades h2{
-    margin: 0 70px;
-    font-size: 20px;
+.actividades h2 {
+  margin: 0 70px;
+  font-size: 20px;
 }
-.actividad input{
-    font-size: 20px;
-    width: 1200px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    margin: 20px 0;
-    background: rgb(121, 120, 120);
+.actividad input {
+  font-size: 20px;
+  width: 1200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px 0;
+  background: rgb(121, 120, 120);
 }
-.actividad textarea{
-    display: block;
-    width: 1200px;
-    height: 120px;
-    border-radius: 10px;
-    border: none;
-    resize: none;
-    font-size: 20px;
-    background: rgb(121, 120, 120);
+.actividad textarea {
+  display: block;
+  width: 1200px;
+  height: 120px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  font-size: 20px;
+  background: rgb(121, 120, 120);
 }
-.actividad{
-    width: 1200px;
-    margin: 20px auto;
-
+.actividad {
+  width: 1200px;
+  margin: 20px auto;
 }
-::placeholder{
-    color: #fff;
-    opacity: .3;
+::placeholder {
+  color: #fff;
+  opacity: 0.3;
 }
-.agregarActividad{
-    font-size: 20px;
-    text-align: center;
-    margin: 10px;
-    width: 200px;
-    height: 40px;
-    color: white;
-    background: grey;
-    border-radius: 10px;
-    border: 2px solid gray;
-    cursor: pointer;
-    transition: all .5s
+#agregarActividad {
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  background: grey;
+  border-radius: 10px;
+  border: 2px solid gray;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
-.agregarActividad:hover{
-    background: #fff;
-    color: #000;
+#agregarActividad:hover {
+  background: #fff;
+  color: #000;
+}
+#containerCard {
+  cursor: default;
+  display: inline-block;
+  margin: 20px 60px;
+  padding: 20px;
+  border-radius: 5%;
+  background: #3d3b3b;
+  transition: all 0.5s;
+}
+#containerCard:hover {
+  box-shadow: 1px 0px 20px #fff;
+  transform: scale(1.1);
+}
+#descripcionCard {
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: 500;
+}
+#titleCard {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+#imgURLCard {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+#Cards {
+  height: fit-content;
+  width: 1200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: rgb(121, 120, 120);
+  text-align: center;
 }
