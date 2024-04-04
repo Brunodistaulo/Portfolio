@@ -33,14 +33,14 @@ html {
 .about p {
   line-height: normal;
   width: 1100px;
-  text-align: center;
   margin: auto;
+  padding: 10px;
 }
 .about {
   text-align: center;
   margin: auto;
   width: 1200px;
-  height: 200px;
+  height: 160px;
   background: rgb(121, 120, 120);
   border-radius: 10px;
 }
@@ -146,9 +146,10 @@ html {
 #descripcionCard {
   margin-bottom: 10px;
   font-size: 10px;
-  font-weight: 500;
+  margin-bottom: 10px;
 }
 #titleCard {
+  margin-top: 5px;
   padding: 10px;
   font-size: 25px;
   text-align: center;
