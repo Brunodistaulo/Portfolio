@@ -28,7 +28,7 @@ class Repository {
 const repository= new Repository;
 
 function convertirElementoHTML(Activity) {
-    const { title, description, imgUrl } = Activity;
+    const { id, title, description, imgUrl } = Activity;
 
     const tituloElemento = document.createElement('h3');
     tituloElemento.innerHTML = title;
@@ -44,13 +44,26 @@ function convertirElementoHTML(Activity) {
 
    
     const contenedorTarjeta = document.createElement('div');
-    contenedorTarjeta.id = 'containerCard'; 
+    contenedorTarjeta.id = 'containerCard';
+
+
+    const deleteButton = document.createElement('button')
+    deleteButton.id = 'deleteButton'
+    deleteButton.textContent = 'X'
+    
 
     
+    contenedorTarjeta.appendChild(deleteButton);
     contenedorTarjeta.appendChild(tituloElemento);
     contenedorTarjeta.appendChild(descripcionElemento);
     contenedorTarjeta.appendChild(imagenElemento);
+    contenedorTarjeta.dataset.id = id;
 
+    deleteButton.addEventListener("click", (event)=>{
+      const id = parseInt(contenedorTarjeta.dataset.id);
+      repository.deleteActivity(id);
+      convertirActivity();
+    })
     
     return contenedorTarjeta;
 }
@@ -62,11 +75,7 @@ tarjetasActSection.innerHTML= '';
 
 const listActivities=repository.getAllActivities();
 
-const newListActivities=listActivities.map((actividad)=>{
-    
-    return convertirElementoHTML(actividad);
-
-})
+const newListActivities=listActivities.map(convertirElementoHTML)
 
  newListActivities.forEach(activity => {
     tarjetasActSection.appendChild(activity);

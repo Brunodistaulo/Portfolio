@@ -131,6 +131,7 @@ html {
 }
 #containerCard {
   cursor: default;
+  position: relative;
   display: inline-block;
   margin: 20px 60px;
   padding: 20px;
@@ -164,4 +165,17 @@ html {
   border-radius: 10px;
   background: rgb(121, 120, 120);
   text-align: center;
+}
+#deleteButton{
+  width: 30px;
+  height: 30px;
+  margin-left: 35%;
+  margin-top: -15px;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+#deleteButton:hover{
+  box-shadow: 1px 0 20px red;
 }
