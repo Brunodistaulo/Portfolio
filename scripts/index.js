@@ -27,8 +27,8 @@ class Repository {
 }
 const repository= new Repository;
 
-function convertirElementoHTML(Activity) {
-    const { id, title, description, imgUrl } = Activity;
+function convertirElementoHTML(activity) {
+    const { id, title, description, imgUrl } = activity;
 
     const tituloElemento = document.createElement('h3');
     tituloElemento.innerHTML = title;
